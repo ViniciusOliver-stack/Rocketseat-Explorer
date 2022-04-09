@@ -4,7 +4,7 @@
 <p  align="center">
 <a href="#-projeto">Projetos</a>
 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a  href="#-sobre">Sobre</a>
+<a  href="#sobre">Sobre</a>
 </p>
 </div>
 
