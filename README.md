@@ -29,7 +29,7 @@ Foi utilizado <b>HTML</b> e <b>CSS</b></p>
 
 ---
 
-# ℹ Sobre
+# Sobre
 <p>Este é um projeto desenvolvido em treinamento, juntamente com a 
 <a  href="https://www.rocketseat.com.br">Rocketseat</a> 🚀
 no decorrer do programa <b>Explorer</b>.
