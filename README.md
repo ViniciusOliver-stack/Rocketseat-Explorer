@@ -2,7 +2,7 @@
 <img  src="https://www.rocketseat.com.br/_next/image?url=%2Fassets%2Flogos%2Fexplorer.svg&w=256&q=75"  alt="">
 	
 <p  align="center">
-<a href="#-projeto">Projetos</a>
+<a href="#projeto">Projetos</a>
 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a  href="#sobre">Sobre</a>
 </p>
@@ -10,7 +10,7 @@
 
 ---
 
-# 💻Projetos :
+# Projetos :
 ### Projeto 01 - Moveis Customizados
 <p>Descrição
 Foi utilizado <b>HTML</b> e <b>CSS</b>
