@@ -17,7 +17,7 @@
 Foi utilizado <b>HTML</b> e <b>CSS</b>
 </p>
 <img  src="https://i.imgur.com/RRKkyYt.png"  alt="">
-[Introdução ao HTML e CSS](./projeto-01)
+<a target="_blank" href="https://viniciusoliver-stack.github.io/Rocketseat-Explorer/projeto-01/">Introdução ao HTML e CSS</a>
 
 
 ---
