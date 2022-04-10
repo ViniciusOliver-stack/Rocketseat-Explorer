@@ -1,6 +1,6 @@
 <div align="center">
-<img width="25%" src="https://raw.githubusercontent.com/Rocketseat/awesome/master/assets/logo_rocketseat.png" alt="">&nbsp;&nbsp;&nbsp;
-<img  src="https://www.rocketseat.com.br/_next/image?url=%2Fassets%2Flogos%2Fexplorer.svg&w=256&q=75"  alt="">
+<img width="220px" src="https://raw.githubusercontent.com/Rocketseat/awesome/master/assets/logo_rocketseat.png" alt="">&nbsp;&nbsp;&nbsp;
+<img width="150px" src="https://www.rocketseat.com.br/_next/image?url=%2Fassets%2Flogos%2Fexplorer.svg&w=256&q=75"  alt="">
 	
 <p  align="center">
 <a href="#projeto">Projetos</a>
@@ -16,9 +16,7 @@
 <p>Descrição
 Foi utilizado <b>HTML</b> e <b>CSS</b>
 </p>
-<img  src="https://source.unsplash.com/random/300×300"  alt="">
-
-### Confira o Layout  🔖 
+<img  src="https://i.imgur.com/RRKkyYt.png"  alt="">
 
 ---
 
