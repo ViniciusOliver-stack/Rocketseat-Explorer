@@ -18,8 +18,6 @@ Foi utilizado <b>HTML</b> e <b>CSS</b>
 </p>
 <img  src="https://i.imgur.com/RRKkyYt.png"  alt="">
 
-### Confira o Layout  🔖 
-https://www.figma.com/file/fAvYZz4dPV5MfhL77XkqkD/Explorer---Stage-01/duplicate
 ---
 
 ### Projeto 02 - Treine me
