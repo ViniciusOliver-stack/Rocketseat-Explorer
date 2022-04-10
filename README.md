@@ -28,9 +28,7 @@ Projeto desenvolvido durante a segunda semana do Explorer da Rocketseat, nesse p
 
 ### Projeto 02 - Treine me
 Foi utilizado <b>HTML</b> e <b>CSS</b></p>
-<img  src="https://source.unsplash.com/random/300×300"  alt="">
-### Confira o Layout  🔖 
-
+<img  src="https://i.imgur.com/JVPAKEp.png"  alt="">
 
 ---
 
