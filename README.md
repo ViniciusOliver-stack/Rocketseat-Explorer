@@ -15,7 +15,7 @@
 # 💻 Projetos 
 
 ### Projeto 01:
--  Treine me: <a target="_blank" href="https://viniciusoliver-stack.github.io/Rocketseat-Explorer/projeto-01/">Introdução ao HTML e CSS</a>
+-  Móveis customizados: <a target="_blank" href="https://viniciusoliver-stack.github.io/Rocketseat-Explorer/projeto-01/">Introdução ao HTML e CSS</a>
 
 ### Projeto 02:
 -  Treine me: <a target="_blank" href="https://viniciusoliver-stack.github.io/Rocketseat-Explorer/projeto-02/">Corrigindo um site quebrado</a>
