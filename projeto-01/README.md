@@ -10,12 +10,11 @@
 <p>
 Projeto desenvolvido durante a segunda semana do Explorer da Rocketseat, nesse projeto aprendemos o conceito de como alinhar texto e elementos, espaçamentos e estilo de fonte. <br/>
 <h3>
-🧪Tecnologias | <b>HTML</b> e <b>CSS</b>
+🧪 Tecnologias | <b>HTML</b> e <b>CSS</b>
 </h3> 
 
 </p>
 <img  src="https://i.imgur.com/RRKkyYt.png"  alt="">
-<a target="_blank" href="https://viniciusoliver-stack.github.io/Rocketseat-Explorer/projeto-01/">🔗 Introdução ao HTML e CSS</a>
 
 ### Informações
 📅 **07.04.2022**
