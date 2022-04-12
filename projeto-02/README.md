@@ -6,7 +6,7 @@
 </div>
 
 ---
-### Projeto 01 - Treine me
+### Projeto 02 - Treine me
 <p>
 Projeto desenvolvido durante a segunda semana do Explorer da Rocketseat, nesse projeto aprendemos mais sobre tags semânticas, o conceito de Box Model e Flexbox e sobre <i>linear-gradient</i>. <br/>
 <h3>
