@@ -8,7 +8,7 @@
 ---
 ### Projeto 01 - Moveis Customizados
 <p>
-Projeto desenvolvido durante a segunda semana do Explorer da Rocketseat, nesse projeto aprendemos o conceito de como alinhar texto e elementos, espaçamentos e estilo de fonte, <br/>
+Projeto desenvolvido durante a segunda semana do Explorer da Rocketseat, nesse projeto aprendemos o conceito de como alinhar texto e elementos, espaçamentos e estilo de fonte. <br/>
 <h3>
 🧪Tecnologias | <b>HTML</b> e <b>CSS</b>
 </h3> 
@@ -24,4 +24,4 @@ Projeto desenvolvido durante a segunda semana do Explorer da Rocketseat, nesse p
 
 🌎 **Result Preview: [Veja o Projeto](https://viniciusoliver-stack.github.io/Rocketseat-Explorer/projeto-01/)**
 
-☑️ **Task:** Construir um site estático a partir do projeto feito no [Figma](https://www.figma.com/file/N79YZLomd5J9qGJcSBqGOX/Explorer---Projeto-01-(Copy)).
+☑️ **Task:** Construir um site estático a partir do projeto feito no [Figma](https://www.figma.com/file/fAvYZz4dPV5MfhL77XkqkD/Explorer---Stage-01/duplicate).
