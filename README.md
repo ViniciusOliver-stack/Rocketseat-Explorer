@@ -19,6 +19,10 @@
 
 ### Projeto 02:
 -  Treine me: <a target="_blank" href="https://viniciusoliver-stack.github.io/Rocketseat-Explorer/projeto-02/">Corrigindo um site quebrado</a>
+
+### Projeto 03:
+-  Rocket.sect: <a target="_blank" href="https://viniciusoliver-stack.github.io/Rocketseat-Explorer/projeto-03/">Criando um site estático</a>
+
 ---
 
 # 📕 Sobre
