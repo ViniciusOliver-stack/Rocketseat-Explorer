@@ -6,7 +6,7 @@
 ---
 ### Projeto 03 - Rocket.sect
 <p>
-Projeto desenvolvido durante a segunda semana do Explorer da Rocketseat, nesse projeto fomos desafiados a colocar em prática tudo que aprendemos no decorrer no nível 02, criando um site estático. <br/>
+Projeto desenvolvido durante a segunda semana do Explorer da Rocketseat, nesse projeto fomos desafiados a colocar em prática tudo que aprendemos no decorrer do curso, criando um site estático, utilizando o conceito de Flex box, alinhamento e formatação dos textos. <br/>
 <h3>
 🧪Tecnologias | <b>HTML</b> e <b>CSS</b>
 </h3> 
