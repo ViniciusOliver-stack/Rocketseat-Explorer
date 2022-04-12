@@ -16,3 +16,12 @@ Projeto desenvolvido durante a segunda semana do Explorer da Rocketseat, nesse p
 </p>
 <img  src="https://i.imgur.com/RRKkyYt.png"  alt="">
 <a target="_blank" href="https://viniciusoliver-stack.github.io/Rocketseat-Explorer/projeto-01/">🔗 Introdução ao HTML e CSS</a>
+
+### Informações
+📅 **07.04.2022**
+
+🕛 **Status:** Concluído✔️
+
+🌎 **Result Preview: [Veja o Projeto](https://viniciusoliver-stack.github.io/Rocketseat-Explorer/projeto-01/)**
+
+☑️ **Task:** Construir um site estático a partir do projeto feito no [Figma](https://www.figma.com/file/N79YZLomd5J9qGJcSBqGOX/Explorer---Projeto-01-(Copy)).
