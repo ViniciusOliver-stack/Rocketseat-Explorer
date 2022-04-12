@@ -1,0 +1,51 @@
+@media (min-width: 320px) and (max-width: 425px){
+    nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav a {
+        margin-bottom: 1.5rem;
+    }
+    main{
+        flex-direction: column;
+        margin-bottom: 2.5rem !important;
+    }
+    nav ul {
+        gap: 1rem;
+    }
+    #img1{
+        width: 100%;
+    }
+    #padlock{
+        width: 10%;
+    }
+    section h1{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width: 80% !important;
+        margin: 0 auto 3.6rem;
+    }
+    section p{
+        width: 100% !important; 
+        margin: 0;
+    }
+    .line{
+        width: 100% !important;
+        margin: 0 auto 1.8rem;
+    
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    main{
+        flex-direction: column;
+        margin-bottom: 2.5rem !important;
+    }
+    #img1{
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+    .line{
+        width: 80% !important;
+    }
+}
