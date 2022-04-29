@@ -1,0 +1,250 @@
+@import url("./reset.css");
+
+body{
+    background: var(--bg-body);
+}
+body:before{
+    content: '';
+    width: 100%;
+    height: 46.5rem;
+    background: var(--bg-dark);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+
+    font-size: 1.6rem;
+}
+.container{
+    width: 750px;
+    margin: 107px auto;
+}
+header{
+    color: var(--bg-white);
+    text-align: center;
+}
+header h1{
+    font-weight: 400;
+    font-size: 3.6rem;
+    line-height: 45px;
+}
+header p{
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 24px;
+
+    margin-bottom: 2rem;
+}
+
+form{
+    background: var(--bg-white);
+    width: 75rem;
+    margin: auto;
+
+    border-radius: 0 0 20px 20px;
+
+    padding: 30px 64px 64px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+legend{
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 34px;
+
+    color: var(--text-dark-blue);
+    text-align: center;
+
+    border-bottom: 1px solid #E6E6F0;
+    padding-bottom: 8px;
+}
+
+.form-header{
+    background: var(--bg-red);
+
+    border-radius: 20px 20px 0 0;
+    width: 75rem;
+    margin: 3.2rem auto 0;
+    padding: 50px 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.form-header h1{
+    color: var(--bg-white);
+    
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 34px;
+}
+.event-user{
+    display: flex;
+    gap: 22px;
+}
+
+.fieldset-wrapper legend{
+    margin-bottom: 32px;
+}
+
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 8px;
+
+}
+
+
+.input-wrapper label,
+.select-wrapper label,
+.checkbox-wrapper label{
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+
+    color: var(--text-label);
+}
+
+.input-wrapper label span{
+    font-size: 12px;
+    line-height: 20px;
+
+    color: var(--text-span);
+
+    margin-left: 12px;
+}
+.event-user .input-wrapper input,
+.col-3 > div:nth-child(1){
+    width: 300px;
+}
+
+.input-wrapper input,
+.select-wrapper textarea{
+    background: var(--bg-input);
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+
+    width: 100%;
+    height: 55.53px;
+    margin: auto;
+
+    padding: 0 7px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #121212;
+}
+
+.select-wrapper select{
+    appearance: none;
+    padding: 0 10px;
+
+    background: var(--bg-input);
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+
+
+    width: 300px;
+    height: 55.53px;
+    margin-bottom: 30px;
+}
+.select-wrapper option{
+    font-size: 16px;
+    line-height: 26px;
+    
+    background: #FAFAFC;
+    
+}
+.select-wrapper label{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.select-wrapper textarea {
+    padding: 5px; 
+    height: 168px;
+    margin-bottom: 30px;
+}
+
+input:invalid,
+select:invalid{
+    border: 1px solid #f67669;
+    color: #6C6A71;
+}
+
+input:valid{
+    border: 1px solid #9efa99;
+    color: #121212;
+}
+
+/*Checkbox*/
+.checkbox-wrapper{
+    position: relative;
+}
+
+.checkbox-wrapper input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+
+    opacity: 0;
+}
+
+.checkbox-wrapper label{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-wrapper label:before{
+    content: '';
+    width: 24px;
+    height: 24px;
+
+    background: var(--bg-input);
+
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+
+    display: inline-block;
+}
+
+.checkbox-wrapper input:checked + label::before{
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.checkbox-wrapper input:focus + label:before{
+    outline: 2px solid black;
+}
+
+/*End*/
+
+.col-3{
+    display: flex;
+    gap: 20px;
+}
+
+.col-3 > div:nth-child(2),
+.col-3 > div:nth-child(3){
+    width: 140px;
+}
+
+.input-wrapper input[type="submit"]{
+    margin-top: 64px;
+    background: var(--bg-red);
+    color: var(--bg-white);
+
+    font-size: 2rem;
+    line-height: 26px;
+    font-weight: 400;
+}

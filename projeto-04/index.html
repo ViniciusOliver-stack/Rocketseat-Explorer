@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - 02</title>
+
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Avalie a sua mentoria</h1>
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+            <img src="./assets/image/img1.svg" alt="Desenho de um balão da cor vermelha com 5 estrelas dentro sendo 3 preenchidas com a cor branca e 2 vazias">
+        </header>
+
+        <div class="form-header">
+            <h1>Informações Pessoais</h1>
+        </div>
+        
+        <form>
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <div class="event-user">
+                        <div class="input-wrapper">
+                            <label for="event-name">Nome <br></label>
+                            <input type="text" id="event-name" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="event-sobrenome">Sobrenome <br></label>
+                            <input type="text" id="event-sobrenome" required>
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="event-email">Email <br></label>
+                        <input type="email" id="event-email" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Informações do Mentor</legend>
+
+                    <div class="select-wrapper">
+                        <label for="event-mentor"> Selecione quem foi o seu mentor <br>
+                            <select id="event-mentor" required>
+                                <option value="0"></option>
+                                <option value="1">Maykão Brito</option>
+                                <option value="2">Biro Biro Biro</option>
+                                <option value="3">Diego Fernandes</option>
+                                <option value="4">Iago Anther</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="select-wrapper">
+                        <label for="event-feedback"> Feedback sobre o mentor
+                            <textarea id="story" name="event-feedback">
+                            </textarea>
+                        </label>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="event-quest">
+                        <label for="event-quest">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Agendando Próxima Mentoria</legend>
+
+                    <div class="col-3">
+                        <div class="input-wrapper">
+                            <label for="event-data"> Data <span>(DD/MM/AAAA)</span></label>
+                            <input type="date"  id="event-data" required>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="event-begin">Das</label>
+                            <input type="time" id="event-begin" required>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="event-end">Até</label>
+                            <input type="time" id="event-end" required>
+                        </div>
+                    </div>
+                    
+                </div>
+            </fieldset>
+
+            <div class="input-wrapper">
+                <input class="button" type="submit" value="Salvar">
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
