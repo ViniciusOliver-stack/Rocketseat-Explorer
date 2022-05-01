@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin&family=Roboto:ital@1&family=Staatliches&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Staatliches', cursive;
+
+    text-decoration: none;
+    
+}
+
+:root{
+    font-size: 62.5%;
+
+    --fc-primary: #ffffff;
+    --fc-span: #4A4E69;
+    --fc-subtitle: #23053A;
+    --bg: #EFF1FF;
+    --bg-header: #8E9AAF;
+    --bg-card: #FEEAFA;
+    --bg-h1: #CBC0D3;
+
+}
