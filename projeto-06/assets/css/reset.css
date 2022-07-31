@@ -1,0 +1,15 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+
+  border: none;
+  background: none;
+}
+
+:root{
+  font-size: 62.5%;
+}

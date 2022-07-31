@@ -1,0 +1,50 @@
+@import url(./reset.css);
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.timer-wrapper{
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+}
+
+.timer span{
+  font-weight: 500;
+  font-size: clamp(6rem, 16vw, 12.6rem);
+  line-height: 14.8rem;
+  color: #323238;
+}
+
+.controls{
+  display: flex;
+  gap: 2rem;
+}
+
+.sounds{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+button{
+  cursor: pointer;
+}
+.sounds button svg path:nth-child(1).active{
+  fill: #02799D;
+}
+.hide{
+  display: none;
+}
+
+@media (min-width: 401px) and (max-width: 672px){
+  .container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+  
