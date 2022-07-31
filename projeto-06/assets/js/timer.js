@@ -1,47 +1,67 @@
-function updateTimerDisplay(minutes, seconds){
-  minutesDisplay.textContent = String(minutes).padStart(2, '0');
-  secondsDisplay.textContent = String(seconds).padStart(2, '0');
-}
+import Sounds from './sounds.js'
 
-function incrementTimer(){
-  minutes = minutes + 5;
-  updateTimerDisplay(minutes, 0)
-}
+export default function Timer({
+  minutesDisplay,
+  secondsDisplay,
+  minutes,
+  timeTimerOut,
+  resetControls
+}) {
+  
+  const sounds = Sounds()
 
-function decrementTimer(){
-  if(minutes <= 5){
-    sounds.alertAudio()
-    alert('O tempo mínimo é de 5 minutos');
+  function updateTimerDisplay(minutes, seconds){
+    minutesDisplay.textContent = String(minutes).padStart(2, '0');
+    secondsDisplay.textContent = String(seconds).padStart(2, '0');
   }
-  else{
-    minutes = minutes - 5;
+  
+  function incrementTimer(){
+    minutes = minutes + 5;
     updateTimerDisplay(minutes, 0)
   }
-}
-
-function countDown(){
-  timeTimerOut = setTimeout(function(){
-
-    let minutes = Number(minutesDisplay.textContent)
-    let seconds = Number(secondsDisplay.textContent)
-
-    if(minutes <= 0 && seconds <= 0){
-      sounds.kitchenTimerAudio()
-      resetControls()
-      return;
+  
+  function decrementTimer(){
+    if(minutes <= 5){
+      sounds.alertAudio()
+      alert('O tempo mínimo é de 5 minutos');
     }
-
-    if(seconds <= 0){
-      seconds = 3;
-      --minutes;
+    else{
+      minutes = minutes - 5;
+      updateTimerDisplay(minutes, 0)
     }
-    updateTimerDisplay(minutes, seconds = String(seconds - 1));
-    
-    countDown();
-  }, 1000)
-}
+  }
+  
+  function countDown(){
+    timeTimerOut = setTimeout(function(){
+  
+      let minutes = Number(minutesDisplay.textContent)
+      let seconds = Number(secondsDisplay.textContent)
+  
+      if(minutes <= 0 && seconds <= 0){
+        sounds.kitchenTimerAudio()
+        resetControls()
+        return;
+      }
+  
+      if(seconds <= 0){
+        seconds = 3;
+        --minutes;
+      }
+      updateTimerDisplay(minutes, seconds = String(seconds - 1));
+      
+      countDown();
+    }, 1000)
+  }
+  
+  function resetTimer(){
+    clearTimeout(timeTimerOut);
+    updateTimerDisplay(minutes, 0)
+  }
 
-function resetTimer(){
-  clearTimeout(timeTimerOut);
-  updateTimerDisplay(minutes, 0)
+  return{
+    incrementTimer,
+    decrementTimer,
+    countDown,
+    resetTimer
+  }
 }

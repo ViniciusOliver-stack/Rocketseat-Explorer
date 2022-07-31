@@ -1,4 +1,5 @@
 import Sound from './sound.js'
+import Timer from './timer.js'
 
 /*Variáveis*/
 const btnPlay = document.querySelector('.play');
@@ -13,65 +14,17 @@ const rainSound = document.querySelector('.rain');
 const coffeShopSound = document.querySelector('.coffee-shop');
 const fireplaceSound = document.querySelector('.fireplace');
 
-const sounds = Sound()
-
 let minutes = Number(minutesDisplay.textContent)
 let timeTimerOut;
 
-/*Funções */
-function updateTimerDisplay(minutes, seconds){
-  minutesDisplay.textContent = String(minutes).padStart(2, '0');
-  secondsDisplay.textContent = String(seconds).padStart(2, '0');
-}
-
-function incrementTimer(){
-  minutes = minutes + 5;
-  updateTimerDisplay(minutes, 0)
-}
-
-function decrementTimer(){
-  if(minutes <= 5){
-    sounds.alertAudio()
-    alert('O tempo mínimo é de 5 minutos');
-  }
-  else{
-    minutes = minutes - 5;
-    updateTimerDisplay(minutes, 0)
-  }
-}
-
-function countDown(){
-  timeTimerOut = setTimeout(function(){
-
-    let minutes = Number(minutesDisplay.textContent)
-    let seconds = Number(secondsDisplay.textContent)
-
-    if(minutes <= 0 && seconds <= 0){
-      sounds.kitchenTimerAudio()
-      updateTimerDisplay(minutes, 0)
-      resetControls()
-      return;
-    }
-
-    if(seconds <= 0){
-      seconds = 3;
-      --minutes;
-    }
-    updateTimerDisplay(minutes, seconds = String(seconds - 1));
-    
-    countDown();
-  }, 1000)
-}
-
-function resetControls(){
-  btnPause.classList.add('hide')
-  btnPlay.classList.remove('hide')
-}
-
-function resetTimer(){
-  clearTimeout(timeTimerOut);
-  updateTimerDisplay(minutes, 0)
-}
+const sounds = Sound()
+const timer = Timer({
+  minutesDisplay,
+  secondsDisplay,
+  minutes,
+  timeTimerOut,
+  resetControls
+})
 
 /*Event-driver */
 
@@ -79,7 +32,7 @@ btnPlay.addEventListener('click', function(){
   btnPlay.classList.add('hide')
   btnPause.classList.remove('hide')
   sounds.pressButton()
-  countDown();
+  timer.countDown();
 });
 
 btnPause.addEventListener('click', function(){
@@ -89,18 +42,18 @@ btnPause.addEventListener('click', function(){
 });
 
 btnStop.addEventListener('click', function(){
-  resetTimer();
+  timer.resetTimer();
   resetControls();
   sounds.pressButton()
 });
 
 btnPlus.addEventListener('click', function(){
-  incrementTimer();
+  timer.incrementTimer();
   sounds.pressButton()
 });
 
 btnLess.addEventListener('click', function(){
-  decrementTimer();
+  timer.decrementTimer();
   sounds.pressButton()
 });
 
