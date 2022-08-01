@@ -1,5 +1,6 @@
 import Sound from './sound.js'
 import Timer from './timer.js'
+import Controls from './controls.js'
 
 /*Variáveis*/
 const btnPlay = document.querySelector('.play');
@@ -14,36 +15,34 @@ const rainSound = document.querySelector('.rain');
 const coffeShopSound = document.querySelector('.coffee-shop');
 const fireplaceSound = document.querySelector('.fireplace');
 
-let minutes = Number(minutesDisplay.textContent)
 let timeTimerOut;
 
 const sounds = Sound()
+const controls = Controls({
+  btnPlay,
+  btnPause,
+})
 const timer = Timer({
   minutesDisplay,
   secondsDisplay,
-  minutes,
   timeTimerOut,
-  resetControls
 })
 
 /*Event-driver */
-
 btnPlay.addEventListener('click', function(){
-  btnPlay.classList.add('hide')
-  btnPause.classList.remove('hide')
+  controls.play()
   sounds.pressButton()
   timer.countDown();
 });
 
 btnPause.addEventListener('click', function(){
-  clearTimeout(timeTimerOut);
-  resetControls()
+  controls.pause()
+  timer.hold()
   sounds.pressButton()
 });
 
 btnStop.addEventListener('click', function(){
   timer.resetTimer();
-  resetControls();
   sounds.pressButton()
 });
 
@@ -60,7 +59,7 @@ btnLess.addEventListener('click', function(){
 /*Btn Sounds */
 forestSound.addEventListener('click', function(e){
   sounds.pressButtonForest(e)
-})
+});
 
 coffeShopSound.addEventListener('click', function(e){
   sounds.pressButtonRain(e)

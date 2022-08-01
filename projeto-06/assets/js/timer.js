@@ -1,14 +1,14 @@
-import Sounds from './sounds.js'
+import Sounds from './sound.js'
 
 export default function Timer({
   minutesDisplay,
   secondsDisplay,
-  minutes,
   timeTimerOut,
-  resetControls
 }) {
   
   const sounds = Sounds()
+  let minutes = Number(minutesDisplay.textContent)
+
 
   function updateTimerDisplay(minutes, seconds){
     minutesDisplay.textContent = String(minutes).padStart(2, '0');
@@ -39,7 +39,7 @@ export default function Timer({
   
       if(minutes <= 0 && seconds <= 0){
         sounds.kitchenTimerAudio()
-        resetControls()
+        resetTimer()
         return;
       }
   
@@ -58,10 +58,15 @@ export default function Timer({
     updateTimerDisplay(minutes, 0)
   }
 
+  function hold(){
+    clearTimeout(timeTimerOut);
+  }
+
   return{
     incrementTimer,
     decrementTimer,
     countDown,
-    resetTimer
+    resetTimer,
+    hold
   }
 }

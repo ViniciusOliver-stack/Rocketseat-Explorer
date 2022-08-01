@@ -1,11 +1,13 @@
 export default function Sound(){
-  const soundForest = new Audio('../assets/music/Floresta.wav')
-  const soundRain = new Audio('../assets/music/Chuva.wav')
-  const soundCafeteria = new Audio('../assets/music/Cafeteria.wav')
-  const soundFirePlace = new Audio('../assets/music/Lareira.wav')
+  const soundForest = new Audio('https://github.com/ViniciusOliver-stack/Rocketseat-Explorer/blob/main/projeto-06/assets/music/Floresta.wav?raw=true');
+  const soundRain = new Audio('https://github.com/ViniciusOliver-stack/Rocketseat-Explorer/blob/main/projeto-06/assets/music/Chuva.wav?raw=true')
+  const soundCafeteria = new Audio('https://github.com/ViniciusOliver-stack/Rocketseat-Explorer/blob/main/projeto-06/assets/music/Cafeteria.wav?raw=true')
+  const soundFirePlace = new Audio('https://github.com/ViniciusOliver-stack/Rocketseat-Explorer/blob/main/projeto-06/assets/music/Lareira.wav?raw=true')
   const buttonPressAudio = new Audio("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/button-press.wav?raw=true")
   const kitchenTimer = new Audio("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/kichen-timer.mp3?raw=true")
-  const soundAlert = new Audio('../assets/music/Alert.wav')
+  const soundAlert = new Audio('https://github.com/ViniciusOliver-stack/Rocketseat-Explorer/blob/main/projeto-06/assets/music/Alert.wav?raw=true')
+
+  
   function pressButtonForest(e){
     if(e.target.classList.contains('active')){
       soundForest.pause()
@@ -13,7 +15,6 @@ export default function Sound(){
     }
     else{
       soundForest.play()
-      soundForest.volume = 50
       soundForest.loop = true;
       e.target.classList.add('active')
     }
@@ -65,6 +66,7 @@ export default function Sound(){
   function alertAudio(){
     soundAlert.play()
   }
+  
 
   return{
     pressButtonForest,
