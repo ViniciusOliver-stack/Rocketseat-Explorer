@@ -12,8 +12,14 @@ export default function Controls({
     btnPause.classList.add('hide')
   }
 
+  function reset(){
+    btnPlay.classList.remove('hide')
+    btnPause.classList.add('hide')
+  }
+
   return{
     play,
     pause,
+    reset
   }
 }

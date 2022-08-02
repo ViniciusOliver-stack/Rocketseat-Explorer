@@ -35,9 +35,15 @@
 button{
   cursor: pointer;
 }
+
+
 .sounds button svg path:nth-child(1).active{
-  fill: #02799D;
+  fill: #02799d;
 }
+.sounds button svg path:nth-child(1).active + path:nth-child(2){
+  fill: #fff;
+}
+
 .hide{
   display: none;
 }
