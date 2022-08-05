@@ -1,5 +1,13 @@
 @import url(./reset.css);
 
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  user-select: none;
+}
+
 .container{
   width: 100vw;
   height: 100vh;
@@ -18,7 +26,7 @@
   font-weight: 500;
   font-size: clamp(6rem, 16vw, 12.6rem);
   line-height: 14.8rem;
-  color: #323238;
+  color: var(--fc-primary);
 }
 
 .controls{
@@ -27,6 +35,8 @@
 }
 
 .sounds{
+  width: 35rem;
+  height: 33.6rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
@@ -36,17 +46,66 @@ button{
   cursor: pointer;
 }
 
+#select-theme img{
+  position: absolute;
+  top: 56px;
+  right: 56px;
+  cursor: pointer;
+}
 
 .sounds button svg path:nth-child(1).active{
-  fill: #02799d;
+  fill: var(--bg-card);
 }
 .sounds button svg path:nth-child(1).active + path:nth-child(2){
-  fill: #fff;
+  fill: var(--white);
 }
 
-.hide{
+.hidden{
   display: none;
 }
+
+/*Dark Mode*/
+body.dark-mode{
+  background: var(--bg-dark);
+  transition: all 0.5s ease-in-out;
+}
+
+body.dark-mode .timer span{
+  color: var(--fc-dark);
+}
+body.dark-mode .controls button svg path{
+  fill: var(--fc-dark);
+}
+body.dark-mode .sounds button svg path:nth-child(1){
+  fill: var(--bg-card-dark);
+}
+body.dark-mode .sounds button svg path:nth-child(2){
+  fill: var(--gray);
+}
+body.dark-mode .sounds button svg path:nth-child(1).active{
+  fill: var(--bg-card-active-dark);
+}
+
+/*Input Range*/
+
+
+input[type="range"]{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 96px;
+  height: 4px;
+  border-radius: 5px;
+  background-color:#323238;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #323238;
+}
+
 
 @media (min-width: 401px) and (max-width: 672px){
   .container{
