@@ -8,12 +8,20 @@ body{
   user-select: none;
 }
 
+button{
+  cursor: pointer;
+}
+
 .container{
   width: 100vw;
   height: 100vh;
   display: grid;
   place-items: center;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.hide{
+  display: none;
 }
 
 .timer-wrapper{
@@ -35,22 +43,9 @@ body{
 }
 
 .sounds{
-  width: 35rem;
-  height: 33.6rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-}
-
-button{
-  cursor: pointer;
-}
-
-#select-theme img{
-  position: absolute;
-  top: 56px;
-  right: 56px;
-  cursor: pointer;
 }
 
 .sounds button svg path:nth-child(1).active{
@@ -60,8 +55,16 @@ button{
   fill: var(--white);
 }
 
-.hidden{
-  display: none;
+input[type="range"].active::-webkit-slider-thumb,
+input[type="range"].active{
+  background: var(--white);
+}
+
+#select-theme img{
+  position: absolute;
+  top: 56px;
+  right: 56px;
+  cursor: pointer;
 }
 
 /*Dark Mode*/
@@ -86,8 +89,12 @@ body.dark-mode .sounds button svg path:nth-child(1).active{
   fill: var(--bg-card-active-dark);
 }
 
-/*Input Range*/
+body.dark-mode input[type="range"],
+body.dark-mode input[type="range"]::-webkit-slider-thumb{
+  background: var(--white);
+}
 
+/*Input Range*/
 
 input[type="range"]{
   -webkit-appearance: none;
@@ -95,17 +102,28 @@ input[type="range"]{
   width: 96px;
   height: 4px;
   border-radius: 5px;
-  background-color:#323238;
+  background-color: var(--input-range);
   cursor: pointer;
+  
+  position: absolute;
+  left: 26px;
+  bottom: 16px;
 }
 input[type="range"]::-webkit-slider-thumb{
   -webkit-appearance: none;
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: #323238;
+  background-color: var(--input-range);
 }
 
+button.forest,
+button.rain,
+button.coffee-shop,
+button.fireplace{
+  position: relative;
+  height: 152px;
+}
 
 @media (min-width: 401px) and (max-width: 672px){
   .container{

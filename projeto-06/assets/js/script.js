@@ -7,8 +7,7 @@ import {
   btnPause,
   minutesDisplay,
   secondsDisplay,
-} from './elements.js'
-
+} from './elements.js';
 
 let timeTimerOut;
 const sounds = Sound()
@@ -17,6 +16,7 @@ const controls = Controls({
   btnPause,
 })
 
+/*Theme */
 const selectTheme = document.querySelector('#select-theme')
 const lightTheme = document.querySelector('.light-theme')
 const darkTheme = document.querySelector('.dark-theme')
@@ -24,11 +24,9 @@ const darkTheme = document.querySelector('.dark-theme')
 selectTheme.addEventListener('click', () => {
   const body = document.querySelector('body')
   body.classList.toggle('dark-mode')
-  lightTheme.classList.toggle('hidden')
-  darkTheme.classList.toggle('hidden')
+  lightTheme.classList.toggle('hide')
+  darkTheme.classList.toggle('hide')
 } )
-
-
 
 const timer = Timer({
   minutesDisplay,
@@ -50,11 +48,11 @@ forestSound.addEventListener('click', function(e){
 });
 
 coffeShopSound.addEventListener('click', function(e){
-  sounds.pressButtonRain(e)
+  sounds.pressButtonCoffeShop(e)
 });
 
 rainSound.addEventListener('click', function(e){
-  sounds.pressButtonCoffeShop(e)
+  sounds.pressButtonRain(e)
 });
 
 fireplaceSound.addEventListener('click', function(e){
