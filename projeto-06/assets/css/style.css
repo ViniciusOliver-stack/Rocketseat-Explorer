@@ -1,6 +1,6 @@
 @import url(./reset.css);
 
-body{
+body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -8,11 +8,11 @@ body{
   user-select: none;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
-.container{
+.container {
   width: 100vw;
   height: 100vh;
   display: grid;
@@ -20,83 +20,83 @@ button{
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 
-.hide{
+.hide {
   display: none;
 }
 
-.timer-wrapper{
+.timer-wrapper {
   display: grid;
   place-items: center;
   gap: 2rem;
 }
 
-.timer span{
+.timer span {
   font-weight: 500;
   font-size: clamp(6rem, 16vw, 12.6rem);
   line-height: 14.8rem;
   color: var(--fc-primary);
 }
 
-.controls{
+.controls {
   display: flex;
   gap: 2rem;
 }
 
-.sounds{
+.sounds {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
-.sounds button svg path:nth-child(1).active{
+.sounds button svg path:nth-child(1).active {
   fill: var(--bg-card);
 }
-.sounds button svg path:nth-child(1).active + path:nth-child(2){
+.sounds button svg path:nth-child(1).active + path:nth-child(2) {
   fill: var(--white);
 }
 
-input[type="range"].active::-webkit-slider-thumb,
-input[type="range"].active{
+input[type='range'].active::-webkit-slider-thumb,
+input[type='range'].active {
   background: var(--white);
 }
 
-#select-theme img{
+#select-theme img {
   position: absolute;
-  top: 56px;
-  right: 56px;
+  top: 5rem;
+  right: 5rem;
   cursor: pointer;
 }
 
 /*Dark Mode*/
-body.dark-mode{
+body.dark-mode {
   background: var(--bg-dark);
   transition: all 0.5s ease-in-out;
 }
 
-body.dark-mode .timer span{
+body.dark-mode .timer span {
   color: var(--fc-dark);
 }
-body.dark-mode .controls button svg path{
+body.dark-mode .controls button svg path {
   fill: var(--fc-dark);
 }
-body.dark-mode .sounds button svg path:nth-child(1){
+body.dark-mode .sounds button svg path:nth-child(1) {
   fill: var(--bg-card-dark);
 }
-body.dark-mode .sounds button svg path:nth-child(2){
+body.dark-mode .sounds button svg path:nth-child(2) {
   fill: var(--gray);
 }
-body.dark-mode .sounds button svg path:nth-child(1).active{
+body.dark-mode .sounds button svg path:nth-child(1).active {
   fill: var(--bg-card-active-dark);
 }
 
-body.dark-mode input[type="range"],
-body.dark-mode input[type="range"]::-webkit-slider-thumb{
+body.dark-mode input[type='range'],
+body.dark-mode input[type='range']::-webkit-slider-thumb {
   background: var(--white);
 }
 
 /*Input Range*/
 
-input[type="range"]{
+input[type='range'] {
   -webkit-appearance: none;
   appearance: none;
   width: 96px;
@@ -104,12 +104,12 @@ input[type="range"]{
   border-radius: 5px;
   background-color: var(--input-range);
   cursor: pointer;
-  
+
   position: absolute;
   left: 26px;
   bottom: 16px;
 }
-input[type="range"]::-webkit-slider-thumb{
+input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 16px;
   height: 16px;
@@ -120,14 +120,47 @@ input[type="range"]::-webkit-slider-thumb{
 button.forest,
 button.rain,
 button.coffee-shop,
-button.fireplace{
+button.fireplace {
   position: relative;
   height: 152px;
 }
 
-@media (min-width: 401px) and (max-width: 672px){
-  .container{
+@media (min-width: 320px) and (max-width: 425px) {
+  #select-theme img {
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .controls {
+    margin-top: -3rem;
+    gap: 1rem;
+  }
+  .controls button svg {
+    width: 80%;
+  }
+
+  .sounds svg:nth-child(1) {
+    width: 80%;
+  }
+
+  input[type='range'] {
+    width: 87px;
+    height: 4px;
+
+    position: absolute;
+    bottom: 32px;
+  }
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--input-range);
+  }
+}
+
+@media (min-width: 401px) and (max-width: 672px) {
+  .container {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-  
