@@ -1,0 +1,20 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
+
+  font-size: 1.6rem;
+}
+
+:root{
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+
+  --fc-primary: #fff;
+  --fc-secundary: #e1e1e6;
+  --fc-nav: #c4c4cc;
+  --fc-link: #02799d;
+
+}
