@@ -32,6 +32,18 @@ Com o <a href="https://nodejs.org/en/"> Node.Js</a> instalado em sua máquina.
 Após ter baixado o seu projeto na sua máquina abra o seu editor de código da sua preferência, logo em seguida abra o terminal dentro do seu editor de código e rode o seguinte comando:
 
 
-```javascript
-	npm strat
+```bash
+# Clone this repository
+$ git clone https://github.com/Pedro558/SPA-Universe.git
+
+# Acess the project folder cmd/terminal
+$ cd SPA-Universe.git
+
+# Install the dependencies
+$ npm install lite-server
+
+# Run the application 
+$ npm start
+
+# The server will start at port:3000 - in your browse acess <http://localhost:3000>
 ```
