@@ -33,12 +33,6 @@ Após ter baixado o seu projeto na sua máquina abra o seu editor de código da 
 
 
 ```bash
-# Clone this repository
-$ git clone https://github.com/Pedro558/SPA-Universe.git
-
-# Acess the project folder cmd/terminal
-$ cd SPA-Universe.git
-
 # Install the dependencies
 $ npm install lite-server
 
