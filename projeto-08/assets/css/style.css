@@ -1,0 +1,183 @@
+@import url(./reset.css);
+
+body{
+  background-color: var(--bg);
+  color: var(--fc-primary);
+}
+
+#app{
+  max-width: 1120px;
+  margin: 11.5rem auto;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input{
+  color: #fff;
+}
+
+.search{
+  display: flex;
+  gap: .8rem;
+}
+
+.search input{
+  background: var(--bg-placeholder);
+  border: none;
+  border-radius: 5px;
+
+  width: 46rem;
+  height: 4.8rem;
+  padding: 1.6rem;
+}
+
+.search input::placeholder{
+  font-weight: 400;
+  line-height: 100%;
+  color: var(--fc-placeholder);
+}
+
+.search button{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 1.2rem 3.2rem;
+
+  background: var(--bg-btn);
+  color: var(--fc-primary);
+  border-radius: 5px;
+  border: none;
+
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.search button:hover{
+  filter:brightness(1.1);
+}
+
+table{
+  border-collapse: collapse;
+  width: -webkit-fill-available;
+  width: 100%;
+}
+
+.table-wrapper{
+  margin-top: 8.7rem;
+  border: 1px solid #4A808C;
+  border-radius: 12px;
+  max-height: 668px;
+  overflow: overlay;
+}
+
+table th{
+  text-align: left;
+  padding: 1.6rem 4rem !important;
+}
+
+table td{
+  padding: 2rem 4rem;
+}
+
+table *{
+  font-size: 2rem;
+  line-height: 160%;
+  font-weight: 700;
+  color: var(--fc-th);
+
+}
+
+table th{
+  background-color: var(--bg-table);
+}
+
+table th:first-child{
+  border-top-left-radius: 1rem;
+}
+
+table th:last-child{
+  border-top-right-radius: 1rem;
+}
+
+td.user{
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+td.user p{
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3.2rem;
+}
+
+td.user span{
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.2rem;
+}
+
+td.user img{
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td .remove{
+  color: var(--fc-remove);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+div.not-fav.hidden{
+  display: none;
+}
+
+div.not-fav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  height: 100vh;
+}
+
+div.not-fav p{
+  color: #4e5455;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 2.5rem;
+}
+
+tbody tr {
+  border-bottom: 1px solid var(--table-border);
+  background: #06181C;
+}
+
+tbody tr:nth-child(odd) {
+  background: rgba(6, 22, 27, 0.5);
+}
+
+::-webkit-scrollbar{
+  width: 6px;
+}
+
+::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: transparent;
+  border-radius: 10px; 
+  border: 4px solid #4a808c;
+}
